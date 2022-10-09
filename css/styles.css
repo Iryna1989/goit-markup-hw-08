@@ -1,0 +1,58 @@
+/* цвет основного текста  color: #212121 */
+/* цвет текса дополнительного #757575 */
+/* цвет акцент #2196F3 */
+/* /* цвет под бекграундом #FFFFFF темнее rgba(255, 255, 255, 0.6);/ */
+body{
+    font-family: "Roboto" sans-serif;
+}
+.header-nav a {
+    background-color: #FFFFFF; 
+    text-decoration: none; 
+    color: #212121; 
+}
+.site-nav  {
+   
+color: #212121;
+list-style-type: none;
+
+}
+
+.site-nav:hover , .site-nav:focus   {
+    color: #2196F3;
+}
+.site-nav-adress{
+list-style-type: none;
+color: #757575;
+}
+.nav-adress:hover , .nav-adress:hover {
+    color: #2196F3;
+ 
+
+}
+
+.hero{
+    background-color: #2F303A; 
+    color: #FFFFFF;
+}
+
+.button{
+    background-color: #2196F3 ; 
+    color:#FFFFFF;
+}
+.features{
+    background-color: #F5F5F5;
+}
+.features-title{
+    color: #212121;
+}
+.features-text{
+
+}
+.about{
+   background-color:   #F5F5F5;
+}
+.about-title{
+ 
+
+color: #212121;
+}
