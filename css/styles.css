@@ -10,7 +10,7 @@
 }
 body{
      font-family: "Roboto" , "sans-serif" ;
-      background-color: #F5F5F5;
+      background-color: #FFFFFF;
     font-size: 14px;
     letter-spacing: 0.03em;
 }
@@ -114,6 +114,8 @@ text-transform: uppercase;
 .buttons-portfolio{
     background-color: var(--secondary-bg-color);
     color: var(--primary-text-color);
+    cursor: pointer;
+    font-family: inherit;
     font-weight: 500;
 font-size: 16px;
 line-height: 1.6;
@@ -154,6 +156,9 @@ color: var(--primary-text-color);
 
 }
 /* команда */
+.team{
+    background-color: var(--secondary-bg-color);
+}
 .team-title-icone{ 
     font-weight: 500;
 font-size: 16px;
@@ -197,7 +202,6 @@ letter-spacing: 0.06em;
 }
 .project-text{
     color: var(--primary-additional-color); 
-    font-weight: 400;
 font-size: 16px;
 line-height: 1.9;
 letter-spacing: 0.03em;
