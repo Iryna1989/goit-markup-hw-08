@@ -53,6 +53,15 @@ font-size: 14px;
 line-height: 1.1;
 letter-spacing: 0.02em;
 }
+
+.nav-adress{
+  text-decoration: none;
+  color: var(--primary-additional-color); 
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
 .nav-adress:hover , 
 .nav-adress:focus ,
 .site-nav:hover , 
@@ -62,19 +71,9 @@ letter-spacing: 0.02em;
 .current{
     color: var(--accent-color);
 }
-.nav-adress{
-  text-decoration: none;
-  color: var(--primary-additional-color); 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-}
-.site-nav-adress {
+.list-style{
     list-style-type: none;
-}
-
-
+   }
 /* герой */
 .hero{
     background-color: var(--bg-hero-footer-color);
@@ -107,10 +106,7 @@ text-transform: uppercase;
     align-items: center;
     text-align: center;
 }
-.list-style{
- list-style-type: none;
-  text-decoration: none;
-}
+
 .buttons-portfolio{
     background-color: var(--secondary-bg-color);
     color: var(--primary-text-color);
@@ -176,9 +172,7 @@ color: var(--primary-additional-color);
 
 }
 /* Портфоліо */
-.portfolio{
 
-}
 /* спрятані заголовки*/
 .visually-hidden {
   position: absolute;
@@ -205,6 +199,10 @@ letter-spacing: 0.06em;
 font-size: 16px;
 line-height: 1.9;
 letter-spacing: 0.03em;
+}
+.project-icon{
+    width:370px ;
+     height:294px;
 }
 /* Футер */
 .footer {  
