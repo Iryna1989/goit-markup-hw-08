@@ -107,7 +107,7 @@ text-transform: uppercase;
     align-items: center;
     text-align: center;
 }
-.list-style-none{
+.list-style{
  list-style-type: none;
   text-decoration: none;
 }
