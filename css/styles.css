@@ -73,9 +73,17 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;  
+}
 
 .section{
     padding-top: 94px;
+    padding-bottom: 94px;
+}
+.section-about{
     padding-bottom: 94px;
 }
 /* --------------ЛОГОТИП---------- */
@@ -109,17 +117,11 @@ line-height: 1.2;
 color: var(--secondary-color);
 }
 /* ------------ХЕДЕР--------------*/
-.container{
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    
-    
-}
 
 .header-container{
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #ECECEC;
 }
 .header-nav{
     margin-right: auto;
@@ -176,12 +178,7 @@ letter-spacing: 0.02em;
 .hero{
 background-color: var(--bg-hero-footer-color);
 color: var(--secondary-color);
-font-weight: 900;
-font-size: 44px;
-line-height: 1.4;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
+padding-top: 200px;
 padding-bottom: 200px;
 
 
@@ -193,13 +190,16 @@ line-height: 1.4;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-padding-top: 200px;
+margin-bottom: 30px;
+width: 696px;
+margin: 0 auto;
 margin-bottom: 30px;
 }
 /* --------КНОПКИ---------- */
 .button{
 
-    margin:  auto;
+    margin: 0 auto;
+    padding: 10px 32px;
     font-family : inherit;
     background-color: var(--bg-button-hero);
     color: var(--secondary-color);
@@ -213,7 +213,7 @@ margin-bottom: 30px;
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 .buttons-portfolio{
     background-color: var(--secondary-bg-color);
@@ -225,6 +225,7 @@ margin-bottom: 30px;
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
+    padding: 6px 22px;
 }
 
 .buttons-portfolio:hover , .buttons-portfolio:focus{
@@ -238,13 +239,13 @@ margin-bottom: 30px;
 
 }
 .features-title{
-    color: var(--primary-text-color);
-    font-weight: 700;
+color: var(--primary-text-color);
+font-weight: 700;
 font-size: 14px;
 line-height: 1.1;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-padding-bottom: 10px;
+margin-bottom: 10px;
 
 }
 .features-text{
@@ -258,7 +259,7 @@ letter-spacing: 0.03em;
 /*--------------ABOUT---------- */
 
 .web-title{
-    font-weight: 700;
+font-weight: 700;
 font-size: 36px;
 line-height: 1.2;
 text-align: center;
@@ -273,7 +274,6 @@ margin-bottom: 50px;
 }
 /*------КОМАНДА---------*/
 .team{
-    background-color: var(--secondary-bg-color);
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
@@ -287,7 +287,7 @@ margin-bottom: 50px;
     flex-basis: calc((100% - 30px *3) / 4);
 }
 .team-wrapper{
-    padding: 30px 10px;
+    padding: 30px 0px;
 
 }
 .team-title-icone{ 
@@ -306,6 +306,9 @@ line-height: 1.2;
 text-align: center;
 color: var(--primary-additional-color); 
 
+}
+.team-bkg{
+    background-color: var(--secondary-bg-color);
 }
 /*-----------------ПОРТФОЛІО------------- */
 
@@ -335,6 +338,7 @@ letter-spacing: 0.06em;
 font-size: 16px;
 line-height: 1.9;
 letter-spacing: 0.03em;
+margin-top: 4px;
 }
 .project-icon{
     width:370px ;
@@ -342,18 +346,15 @@ letter-spacing: 0.03em;
 }
 /* -----------------ФУТЕР------------------*/
 
-.logo-footer{
-    display: flex;
-    padding-top:  60px;
-    padding-bottom: 20px;
+.adress{
+    margin-top: 20px;
 }
 .footer {  
     background-color: var(--bg-hero-footer-color);
+    padding: 60px 0;
 }
-.footer-wrapper{
-    gap: 9px;
-    padding-bottom: 60px;
-  
+.footer-wrapper:not(:last-child){
+ margin-bottom: 9px;
 }
 
 .footer-adress {
@@ -362,8 +363,9 @@ font-size: 14px;
 line-height: 1.7;
 letter-spacing: 0.03em;
 color: var(--secondary-color);
-    text-decoration: none;
+text-decoration: none;
       font-style: normal;
+
 }
 .footer-contacts {
     font-weight: 400;
