@@ -261,7 +261,7 @@ margin-bottom: 30px;
     display: block;
     content: "";
     height: 120px;
-    /* background-image: url(../img/Features/antenna\ 1.png); */
+   margin-bottom: 30px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--secondary-bg-color)
