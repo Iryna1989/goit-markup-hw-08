@@ -257,6 +257,27 @@ margin-bottom: 30px;
     gap: 30px;
 
 }
+.features-item::before{
+    display: block;
+    content: "";
+    height: 120px;
+    /* background-image: url(../img/Features/antenna\ 1.png); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--secondary-bg-color)
+}
+.icon-antenna::before{
+    background-image: url(../img/Features/antenna\ 1.png);
+}
+.icon-clok::before{
+    background-image: url(../img/Features/clock\ 1.png);
+}
+.icon-diagram::before{
+    background-image: url(../img/Features/diagram\ 1.png);
+}
+.icon-astronaut::before{
+    background-image: url(../img/Features/astronaut\ 1.png);
+}
 .features-title{
 color: var(--primary-text-color);
 font-weight: 700;
@@ -421,9 +442,15 @@ margin-top: 4px;
 .adress{
     margin-top: 20px;
 }
+
 .footer { 
+    display: flex;
+    justify-content: center;
+    text-align: left;
     background-color: var(--bg-hero-footer-color);
     padding: 60px 0;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 .footer-wrapper:not(:last-child){
  margin-bottom: 9px;
@@ -454,4 +481,42 @@ text-decoration: none;
  .footer-contacts:focus{
     color: var(--accent-color);
  }
+ 
+ .footer-socials-list{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 16px;
 
+ }
+ .footer-title{
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+padding-top: 10px;
+ }
+ .footer-social-item{
+     border-radius: 50%;
+ }
+ .footer-social-link{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: var(--secondary-color)
+ }
+ .footer-social-icon{
+    fill: currentColor;
+ }
+ .footer-socials-link:hover,
+.footer-socials-link:focus{
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    color: var(--secondary-color);
+}
+
+ 
