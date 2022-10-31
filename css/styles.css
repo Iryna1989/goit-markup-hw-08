@@ -183,10 +183,10 @@ letter-spacing: 0.02em;
 /* -------------ГЕРОЙ-------------- */
 .hero{
     max-width: 1600px;
+    height: 600px;
     margin-left: auto;
     margin-right: auto;
 background-color: var(--bg-hero-footer-color);
-color: var(--secondary-color);
 padding-top: 200px;
 padding-bottom: 200px;
 background-image: linear-gradient(   
@@ -212,6 +212,7 @@ margin-bottom: 30px;
 width: 696px;
 margin: 0 auto;
 margin-bottom: 30px;
+color: var(--secondary-color);
 }
 /* --------КНОПКИ---------- */
 .button{
@@ -250,6 +251,7 @@ margin-bottom: 30px;
 .buttons-portfolio:hover , .buttons-portfolio:focus{
     background-color: var(--accent-color);
     color: var(--secondary-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /*----------------ОСОБЛИВОСТІ--------------*/
 .features{
@@ -320,8 +322,8 @@ margin-bottom: 50px;
 }
 .team-item{
   background-color: var(--secondary-color);
-  box-shadow: 0px 0px 1px 0px var(--primary-additional-color);
   border-radius: 2%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .site-nav-item{
     flex-basis: calc((100% - 30px *3) / 4);
@@ -363,9 +365,10 @@ color: var(--primary-additional-color);
     width: 44px;
     height: 44px;
     color: #AFB1B8;
+    border-radius: 50%;
 }
 .social-item{
-    border-radius: 50%;
+    
 }
 .social-icon{
  fill: currentColor;
@@ -391,7 +394,7 @@ color: var(--primary-additional-color);
     align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    color: var(--primary-additional-color);
+    color: #AFB1B8;
 }
 .clients-icon{
     fill: currentColor;
@@ -412,12 +415,17 @@ color: var(--accent-color);
     flex-wrap: wrap;
     gap: 30px;
 }
-
+.project-item{
+    display: block;
+}
+.project-item:hover,
+.project-item:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .project-wrapper{
   padding: 20px 24px; 
   border: 1px solid #EEEEEE;
   border-top: none;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-title{
     color: var(--primary-text-color);
@@ -444,18 +452,27 @@ margin-top: 4px;
 }
 
 .footer { 
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    text-align: left;
+    text-align: left; */
     background-color: var(--bg-hero-footer-color);
     padding: 60px 0;
-    margin: 0 auto;
-    max-width: 1200px;
+    /* margin: 0 auto; */
+    /* max-width: 1200px; */
 }
 .footer-wrapper:not(:last-child){
  margin-bottom: 9px;
 }
-
+.footer-container{
+    display: flex;
+    align-items: baseline;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px; 
+}
+.footer-container-first{
+    margin-right: 70px;
+}
 .footer-adress {
     font-weight: 400;
 font-size: 14px;
@@ -491,12 +508,9 @@ text-decoration: none;
  }
  .footer-title{
 font-weight: 700;
-font-size: 14px;
 line-height: 16px;
-letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #FFFFFF;
-padding-top: 10px;
  }
  .footer-social-item{
      border-radius: 50%;
@@ -507,13 +521,15 @@ padding-top: 10px;
     align-items: center;
     width: 44px;
     height: 44px;
-    color: var(--secondary-color)
+    color: var(--secondary-color);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
  }
  .footer-social-icon{
     fill: currentColor;
  }
- .footer-socials-link:hover,
-.footer-socials-link:focus{
+ .footer-social-link:hover,
+.footer-social-link:focus{
     background-color: var(--accent-color);
     border-radius: 50%;
     color: var(--secondary-color);
