@@ -32,7 +32,7 @@
        <section class="hero ">
         <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button" >Замовити послугу</button>
+        <button type="button" class="button" data-modal-open >Замовити послугу</button>
         </div>
       </section>
         <section class="section" >
@@ -62,9 +62,23 @@
           <div class="container">
         <h2 class="web-title">Чим ми займаємося</h2>
         <ul class="about">
-          <li class="about-pictures"><img src="img/img1.jpg" alt="фото1" width="370" height="294" ></li>
-          <li class="about-pictures"><img src="img/img2.jpg" alt="фото2" width="370" height="294" ></li>
-          <li class="about-pictures"><img src="img/img3.jpg" alt="фото3" width="370" height="294" ></li>
+          <li class="about-pictures">
+            <img src="img/img1.jpg" alt="фото1" width="370" height="294" >
+          <div class="overlay-box">
+              <p class="overlay-text">Десктопні додатки</p>
+            </div></li>
+          <li class="about-pictures">
+            <img src="img/img2.jpg" alt="фото2" width="370" height="294" >
+             <div class="overlay-box">
+              <p class="overlay-text">Мобільні додатки</p>
+            </div></li>
+          
+          <li class="about-pictures">
+            <img src="img/img3.jpg" alt="фото3" width="370" height="294" >
+             <div class="overlay-box">
+              <p class="overlay-text">Дизайнерські рішення</p>
+            </div>
+          </li>
         </ul>
         </div>
       </section>
@@ -378,5 +392,15 @@
       </div>
     </div>
     </footer>
+    <div class=" backdrop" data-modal>
+     <div class="modal">
+      <button class="close-btn" type="button" data-modal-close>
+        <svg class="close-icon-button" width="18" height="18">
+          <use href="./img/icons.svg#close-black"></use>
+        </svg>
+      </button>
+     </div>
+    </div>
+  <script src="./js/modal.js"></script>
   </body>
 </html>
