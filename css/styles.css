@@ -785,10 +785,14 @@ line-height: 14px;
 letter-spacing: 0.01em;
 color: var(--primary-additional-color);
 }
-.form-input:focus {
+.form-field:focus-within > .form-input,
+.form-field:hover > .form-input{
  border-color: var(--accent-color);
 }
-
+.form-field:focus-within > .form-icon,
+.form-field:hover > .form-icon{
+    color: var(--accent-color);
+}
 .form-massage{
     display: block;
     resize: none;
