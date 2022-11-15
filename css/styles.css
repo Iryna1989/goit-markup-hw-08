@@ -633,9 +633,58 @@ color: #FFFFFF;
     color: var(--secondary-color);
 }
 .footer-form-label{
+    position: relative;
     margin-top: 20px;
-    color: rgba(255, 255, 255, 0.6);
+    width: 358px;
+    height: 50px;
+
 }
+.footer-form-label input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+}
+.footer-label{
+position: absolute;
+ top:15px;
+left:15px;
+ font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+.footer-btn{ 
+   display: flex;
+   justify-content: flex-start ;
+   align-items: center;
+   padding-left:28px ;
+   position: relative;
+   margin-top: 20px;
+   margin-left: 12px;
+   width: 200px;
+   height: 50px;
+
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 30px;
+   letter-spacing: 0.06em;
+   color: var(--secondary-color);
+   background: var(--accent-color);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+}
+.footer-btn-icon{
+    position: absolute;
+    top:15px;
+    right:28px;
+}
+
 label{
     display: block;
 }
@@ -684,10 +733,16 @@ display: flex;
     background-color: var(--secondary-color);
     transition: transform 250ms ease-out;
 }
+.backdrop.is-hidden .modal{
+    transform: translate(-50%,-70%);
+}
 .modal-form{
 width: 448px;
 margin-left: 54px;
 
+}
+.form-group{
+    margin-bottom: 10px;
 }
 .modal-title{
     margin-top: 40px;
@@ -700,9 +755,104 @@ letter-spacing: 0.03em;
 
 color: var(--primary-text-color);
 }
-.backdrop.is-hidden .modal{
-    transform: translate(-50%,-70%);
+.form-field{
+    position: relative;
+     display: flex;
+    flex-direction: column;
+    margin-bottom:10px;
 }
+
+.form-icon{
+    position: absolute;
+    top:25px;
+    left: 12px;
+    
+}
+
+.form-field input {
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    outline: unset;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+.form-label{
+    font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: var(--primary-additional-color);
+}
+.form-input:focus {
+ border-color: var(--accent-color);
+}
+
+.form-massage{
+    display: block;
+    resize: none;
+    padding-top: 12px;
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.form-massage::placeholder {
+    opacity: 1;
+  }
+  
+  .form-massage:focus::placeholder {
+    opacity: 0;
+  }
+.form-massage:focus{
+    border-color: var(--accent-color);
+}
+.form-agreement{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;  
+}
+.form-checkbox-icon .unchecked {
+    opacity: 1;
+    transition: var(--transition);
+  }
+  
+  .form-checkbox:checked + .form-checkbox-icon .unchecked {
+    opacity: 0;
+  }
+  
+  .form-checkbox-icon .checked {
+    opacity: 0;
+    transition: var(--transition);
+  }
+  
+  .form-checkbox:checked + .form-checkbox-icon .checked {
+    opacity: 1;
+}
+.checkbox-text{
+  font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: var(--primary-additional-color);
+}
+.checkbox-link{
+    font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+text-decoration-line: underline;
+color: #2196F3;
+}
+  
 .close-btn{
     position: absolute;
     display: flex;
@@ -721,40 +871,10 @@ color: var(--primary-text-color);
     border-radius: 50%;
 
 }
-.form-group{
-}
-.form-field{
-     display: flex;
- flex-direction: column;
-    margin-bottom:10px;
-}
-.form-label{
-    margin-top: 5px;
-}
-.form-field input {
-    height: 40px;
-    margin: 0;
-    padding: 0;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-}
-.checkbox-text{
-  font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
-color: var(--primary-additional-color);
-}
-.checkbox-link{
-    font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
-text-decoration-line: underline;
-color: #2196F3;
-}
+
 .form-btn{  
- 
+    display: block;
+    margin: 0 auto;
 width: 200px;
 height: 50px;
 left: 700px;
