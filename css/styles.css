@@ -665,6 +665,9 @@ align-items: center;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
+ .footer-form-label:focus-within >.footer-label{
+    transform: translateX(-150%);
+ }
 
 
 .footer-btn{ 
@@ -756,7 +759,7 @@ display: flex;
     margin-bottom: 12px;
 font-weight: 700;
 font-size: 20px;
-line-height: 2.3;
+line-height: 23px;
 text-align: center;
 letter-spacing: 0.03em;
 
@@ -800,17 +803,19 @@ color: var(--primary-additional-color);
 .form-field:focus-within > .form-input,
 .form-field:hover > .form-input{
  border-color: var(--accent-color);
- transform: var(--transition);
+ transition: var(--transition);
+ 
 }
 .form-field:focus-within > .form-icon,
 .form-field:hover > .form-icon{
     fill: var(--accent-color);
-    transform: var(--transition);
+    transition: var(--transition);
 }
 .form-massage{
     outline: transparent;
     display: block;
     resize: none;
+    height: 120px;
     padding-top: 12px;
     padding-left: 16px;
     font-weight: 400;
@@ -831,7 +836,7 @@ color: var(--primary-additional-color);
   }
 .form-massage:focus,
 .form-massage:hover{
-    transform: var(--transition);
+    transition: var(--transition);
     border-color: var(--accent-color);
 }
 .form-agreement{
@@ -911,6 +916,6 @@ border-radius: 4px;
 }
  .close-btn:hover > .close-icon-button{
     fill: var(--accent-color);
-    transform: var(--transition);
+    transition: var(--transition);
  }
  
