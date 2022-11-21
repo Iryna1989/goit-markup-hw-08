@@ -666,6 +666,7 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
  .footer-form-label:focus-within >.footer-label{
+    transition: var(--transition);
     transform: translateX(-150%);
  }
 
