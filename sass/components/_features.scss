@@ -1,0 +1,32 @@
+.features {
+  display: flex;
+  gap: 30px;
+}
+.features__item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-bg-color);
+}
+.icon__antenna::before {
+  background-image: url(../img/Features/antenna\ 1.png);
+}
+.icon__clok::before {
+  background-image: url(../img/Features/clock\ 1.png);
+}
+.icon__diagram::before {
+  background-image: url(../img/Features/diagram\ 1.png);
+}
+.icon__astronaut::before {
+  background-image: url(../img/Features/astronaut\ 1.png);
+}
+.features__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--primary-additional-color);
+}

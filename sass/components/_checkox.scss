@@ -1,0 +1,32 @@
+.form-checkbox-icon .unchecked {
+  opacity: 1;
+  transition: var(--transition);
+}
+
+.form-checkbox:checked + .form-checkbox-icon .unchecked {
+  opacity: 0;
+}
+
+.form-checkbox-icon .checked {
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.form-checkbox:checked + .form-checkbox-icon .checked {
+  opacity: 1;
+}
+.checkbox-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--primary-additional-color);
+}
+.checkbox-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: #2196f3;
+}
