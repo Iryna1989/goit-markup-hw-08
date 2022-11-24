@@ -35,10 +35,9 @@
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 .modal-title {
-  /* margin-top: 40px; */
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
