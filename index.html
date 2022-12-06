@@ -21,19 +21,20 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
+    <!-- header -->
     <header class= "header">
-      <div class= "header__container ">
+      <div class= "header__container">
         <a href="./index.html" class="logo">
-          <span class="logo__first">Web</span><span class="logo__second">Studio</span></a
-        >
-      <nav class="nav">
+        <span class="logo__first">Web</span><span class="logo__second">Studio</span>
+        </a>
+        <nav class="nav">
         <ul class="site__nav">
           <li><a href="./index.html" class="site__item site__item--current">Студія</a></li>
           <li><a href="./portfolio.html" class="site__item">Портфоліо</a></li>
           <li><a href="./index.html" class="site__item">Контакти</a></li>
         </ul>
-      </nav>
-      <ul class="nav__adress">
+        </nav>
+        <ul class="nav__adress">
         <li>
           <a href="mailto:info@devstudio.com" class="nav__item">
             <svg class="contacts__icon" width="16" height="12">
@@ -48,8 +49,8 @@
             >+38 096 111 11 11</a
           >
         </li>
-      </ul>
-      <button
+        </ul>
+        <button
       class="menu-toggle js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
@@ -67,13 +68,15 @@
       </div>
     </header>
     <main>
-      <!-- <section class="hero">
+      <!-- Hero -->
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button" data-modal-open>Замовити послугу</button>
         </div>
-      </section> -->
-      <!-- <section class="features">
+      </section>
+      <!-- Featres -->
+      <section class="features">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
           <ul class="features">
@@ -103,8 +106,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="section-about">
+      </section>
+      <!-- About -->
+      <section class="section-about">
         <div class="container">
           <h2 class="web__title">Чим ми займаємося</h2>
           <ul class="about">
@@ -123,8 +127,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="section team__bkg">
+      </section>
+      <!-- Team -->
+      <section class="section team__bkg">
         <div class="container">
           <h2 class="web__title">Наша команда</h2>
           <ul class="team">
@@ -398,8 +403,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="section">
+      </section>
+      <!-- CLIENTS -->
+      <section class="section">
         <div class="container">
           <h2 class="web__title">Постійні клієнти</h2>
           <ul class="clients">
@@ -447,10 +453,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
-      <div class="footer__container">
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class=" container footer__container">
         <div class="footer__container--first">
           <a href="./index.html" class="logo"
             ><span class="logo__first">Web</span><span class="logo__footer">Studio</span></a
@@ -532,23 +539,23 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer__container--last">
           <p class="footer__title">Підпишіться на розсилку</p>
           <form class="footer-form" name="footer-form" autocomplete="off" novalidate>
             <label class="footer__form--label">
               <span class="footer__label">E-mail</span>
               <input type="email" name="user_email" minlength="5" />
             </label>
-            <button class="footer-btn" type="submit">
-              Підписатися<svg class="footer__btn--icon" width="24" height="24">
+            <button class="footer-btn" type="submit">Підписатися<svg class="footer__btn--icon" width="24" height="24">
                 <use href="./img/icons.svg#icon-send"></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
-    </footer> -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    </footer>
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-btn" type="button" data-modal-close>
           <svg class="close-icon-button" width="18" height="18">
@@ -608,7 +615,7 @@
           <button class="form-btn" type="submit">Відправити</button>
         </form>
       </div>
-    </div> -->
+    </div>
 <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">

@@ -1,12 +1,9 @@
 .header{
-  display: block;
-  outline:  1px solid #ececec;
-}
+    display: block;
+    outline:  1px solid #ececec;
+  }
 
 .header__container {
-  
-  @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
-  }
 }
