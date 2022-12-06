@@ -1,6 +1,16 @@
 .features {
-  display: flex;
-  gap: 30px;
+  @extend %section;
+  display: block;
+  // TABLET
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    gap: 30px;
+  }
+  // DESKTOP
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    gap: 30px;
+  }
 }
 .features__item::before {
   display: block;
@@ -22,6 +32,19 @@
 }
 .icon__astronaut::before {
   background-image: url(../img/Features/astronaut\ 1.png);
+}
+.features__title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 480px) {
+    text-align: center;
+  }
 }
 .features__text {
   font-weight: 400;
