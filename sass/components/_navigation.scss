@@ -1,11 +1,12 @@
-.nav {
-  margin-right: auto;
-  }
-}
+
 .site__nav {
   display: flex;
   align-items: center;
   gap: 50px;
+  @media screen and (max-width: 767px){
+    display: none;
+  
+  }
 }
 .site__item {
   display: block;
@@ -56,9 +57,15 @@
 }
 
 .nav__adress {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+  margin-left: auto;
+  
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1199px) {
+    display: flex;
+    gap: 30px;
+  }
 }
 .nav__item {
   display: flex;

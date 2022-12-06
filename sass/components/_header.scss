@@ -1,13 +1,12 @@
-.header-border {
-  border-bottom: 1px solid #ececec;
+.header{
+  display: block;
+  outline:  1px solid #ececec;
 }
 
 .header__container {
-  display: none;
   
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ececec;
   }
 }

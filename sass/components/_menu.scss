@@ -5,8 +5,8 @@
     align-items: center;
     justify-content: center;
   
-    margin: 0;
-    padding: 0;
+    margin-left: auto;
+    padding: 10;
     background-color: transparent;
     cursor: pointer;
     border: none;
@@ -14,7 +14,7 @@
     outline: none;
   }
   
-  @media (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     .menu-toggle {
       display: none;
     }
