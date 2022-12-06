@@ -22,6 +22,7 @@
   
   .menu-toggle:hover,
   .menu-toggle:focus {
+    color: var(--accent-color);
     background-color: rgba(0, 0, 0, 0.1);
   }
   
@@ -48,6 +49,11 @@
     top: 10px;
     right: 15px;
     color: black;
+      
+     &:hover,
+     &:focus{
+      color: var(--accent-color);
+     }
   }
   
   .mobile-menu {

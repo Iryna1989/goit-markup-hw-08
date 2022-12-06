@@ -21,18 +21,19 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header__container container">
-      <a href="./index.html" class="logo"
-        ><span class="logo__first">Web</span><span class="logo__second">Studio</span></a
-      >
-      <nav class="nav">
+    <header class= "header">
+      <div class= "header__container">
+        <a href="./index.html" class="logo">
+        <span class="logo__first">Web</span><span class="logo__second">Studio</span>
+        </a>
+        <nav class="nav">
         <ul class="site__nav">
           <li><a href="./index.html" class="site__item site__item">Студія</a></li>
-          <li><a href="./portfolio.html" class="site__item site__item--current">Портфоліо</a></li>
+          <li><a href="./portfolio.html" class="site__item--current">Портфоліо</a></li>
           <li><a href="./index.html" class="site__item">Контакти</a></li>
         </ul>
-      </nav>
-      <ul class="nav__adress">
+        </nav>
+        <ul class="nav__adress">
         <li>
           <a href="mailto:info@devstudio.com" class="nav__item">
             <svg class="contacts__icon" width="16" height="12">
@@ -47,8 +48,24 @@
             >+38 096 111 11 11</a
           >
         </li>
-      </ul>
-    </header> -->
+        </ul>
+        <button
+      class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <use href="./img/icons.svg#menu">
+          </svg>
+        </button>
+      </div>
+    </header>
     <main>
       <section class="section">
         <div class="container">
@@ -227,7 +244,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer__container">
         <div class="footer__container--first">
           <a href="./index.html" class="logo"
@@ -325,6 +342,49 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+        >
+        <use href="./img/icons.svg#close_menu"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item"> <a href="./index.html" class="mobile-menu__link mobile-menu__link--current">Студія</a></li>
+        <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a></li>
+        <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link">Контакти</a></li>
+      </ul>
+      <ul class="menu-contacts">
+        <li class="menu-contacts__item">
+          <a href="tel:+380961111111" class="menu-contacts__phone"
+          >+38 096 111 11 11</a>
+        </li>
+        <li class="menu-contacts__item">
+          <a href="mailto:info@devstudio.com" class="menu-contacts__mail">
+          info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-socials">
+        <li class="mobile-socials__item"><a class="mobile-socials__link" href="">Instagram</a></li>
+        <li class="mobile-socials__item"><a class="mobile-socials__link" href="">Twitter</a></li>
+        <li class="mobile-socials__item"><a class="mobile-socials__link" href="">Facebook</a></li>
+        <li class="mobile-socials__item"><a class="mobile-socials__link" href="">LinkedIn</a></li>
+      </ul>
+    </div>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

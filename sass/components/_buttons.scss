@@ -11,6 +11,14 @@
   text-align: center;
 }
 .btn-portfolio {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    gap: 15px 8px;
+}
   display: flex;
   justify-content: center;
   gap: 8px;
