@@ -75,7 +75,7 @@
           <button type="button" class="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
-      <!-- Featres -->
+      <!-- Features -->
       <section class="features">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
@@ -113,7 +113,7 @@
           <h2 class="web__title">Чим ми займаємося</h2>
           <ul class="about">
             <li class="about__pictures">
-              <img src="img/img1.jpg" alt="фото1" width="370" height="294" />
+              <img srcset="./img/About/img1@1x.jpg 1x, ./img/About/img1@2x.jpg 2x" src="img/img1.jpg" alt="фото1" width="370" height="294" />
               <p class="about__overlay">Десктопні додатки</p>
             </li>
             <li class="about__pictures">
@@ -134,13 +134,31 @@
           <h2 class="web__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
+              <picture>
+                <!-- Desctop -->
+                <source
+                media="(min-width:1200px)"
+                srcset="./img/Team/img1_ld@1x.jpg 1x,img/Team/img1_ld@2x.jpg 2x"
+                />
+                <!-- TABLET -->
+                <source
+                media="(min-width:768px)"
+                srcset="./img/Team/img1_md@1x.jpg 1x,img/Team/img1_md@2x.jpg 2x"
+                />
+                <!-- MOBILE -->
+                <source
+                media="(max-width:767px)"
+                srcset="./img/Team/img1_sm@1x.jpg 1x,img/Team/img1_sm@2x.jpg 2x"
+                />
               <img
                 src="./img/ІгорДем'яненко.jpg"
                 alt="Ігор Дем'яненко"
                 width="270"
                 height="260"
                 class="team__pictures"
+                loading="lazy"
               />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -201,13 +219,31 @@
               </div>
             </li>
             <li class="team__item">
+              <picture>
+                <!-- Desctop -->
+                <source
+                media="(min-width:1200px)"
+                srcset="./img/Team/img2_ld@1x.jpg 1x,img/Team/img2_ld@2x.jpg 2x"
+                />
+                <!-- TABLET -->
+                <source
+                media="(min-width:768px)"
+                srcset="./img/Team/img2_md@1x.jpg 1x,img/Team/img2_md@2x.jpg 2x"
+                />
+                <!-- MOBILE -->
+                <source
+                media="(max-width:767px)"
+                srcset="./img/Team/img2_sm@1x.jpg 1x,img/Team/img2_sm@2x.jpg 2x"
+                />
               <img
-                src="./img/ОльгаРєпіна.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-                height="260"
-                class="team__pictures"
+              src="./img/ОльгаРєпіна.jpg"
+              alt="Ольга Рєпіна"
+              width="270"
+              height="260"
+              class="team__pictures"
+              loading="lazy"
               />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__title">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -268,13 +304,31 @@
               </div>
             </li>
             <li class="team__item">
+              <picture>
+                <!-- Desctop -->
+                <source
+                media="(min-width:1200px)"
+                srcset="./img/Team/img3_ld@1x.jpg 1x,img/Team/img3_ld@2x.jpg 2x"
+                />
+                <!-- TABLET -->
+                <source
+                media="(min-width:768px)"
+                srcset="./img/Team/img3_md@1x.jpg 1x,img/Team/img3_md@2x.jpg 2x"
+                />
+                <!-- MOBILE -->
+                <source
+                media="(max-width:767px)"
+                srcset="./img/Team/img3_sm@1x.jpg 1x,img/Team/img3_sm@2x.jpg 2x"
+                />
               <img
                 src="./img/МиколаТарасов.jpg"
                 alt="Микола Тарасов"
                 width="270"
                 height="260"
                 class="team__pictures"
+                loading="lazy"
               />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -335,13 +389,31 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./img/МихайлоЄрмаков.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-                height="260"
-                class="team__pictures"
-              />
+              <picture>
+                <!-- Desctop -->
+                <source
+                media="(min-width:1200px)"
+                srcset="./img/Team/img4_ld@1x.jpg 1x,img/Team/img4_ld@2x.jpg 2x"
+                />
+                <!-- TABLET -->
+                <source
+                media="(min-width:768px)"
+                srcset="./img/Team/img4_md@1x.jpg 1x,img/Team/img4_md@2x.jpg 2x"
+                />
+                <!-- MOBILE -->
+                <source
+                media="(max-width:767px)"
+                srcset="./img/Team/img4_sm@1x.jpg 1x,img/Team/img4_sm@2x.jpg 2x"
+                />
+                <img
+                  src="./img/МихайлоЄрмаков.jpg"
+                  alt="Михайло Єрмаков"
+                  width="270"
+                  height="260"
+                  class="team__pictures"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
