@@ -4,12 +4,20 @@
   // TABLET
   @media screen and (min-width: $tablet) {
     display: flex;
-    gap: 30px;
+    
   }
   // DESKTOP
   @media screen and (min-width: $desktop) {
     display: flex;
-    gap: 30px;
+    
+  }
+}
+.features__list{
+  gap: 30px;
+}
+.features__item:not(:last-child){
+  @media screen and(max-width:767px) {
+    margin-bottom: 30px;
   }
 }
 .features__item::before {
@@ -47,7 +55,6 @@
   }
 }
 .features__text {
-  margin-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;

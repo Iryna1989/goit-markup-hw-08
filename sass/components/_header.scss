@@ -1,9 +1,9 @@
-.header{
-    display: block;
-    outline:  1px solid #ececec;
-  }
+.header {
+  display: block;
+  border-bottom: 1px solid #ececec;
+}
 
 .header__container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
