@@ -844,15 +844,31 @@ a {
 }
 
 .project {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
+  display: block;
+}
+@media screen and (min-width: 767px) {
+  .project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .project__item {
+  width: 100%;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 767px) {
+  .project__item {
+    width: 350px;
+    margin-bottom: 0;
+  }
+}
+
+.project__link {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -863,7 +879,7 @@ a {
   transition: box-shadow var(--transition), -webkit-box-shadow var(--transition);
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .project__item {
+  .project__link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -874,7 +890,7 @@ a {
     height: 100%;
   }
 }
-.project__item:hover, .project__item:focus {
+.project__link:hover, .project__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -912,7 +928,7 @@ a {
   transition: transform var(--transition);
   transition: transform var(--transition), -webkit-transform var(--transition);
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .overlay {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -945,9 +961,11 @@ a {
   margin-top: 4px;
 }
 
-.project__icon {
-  width: 370px;
-  height: 294px;
+@media screen and (min-width: 767px) {
+  .project__icon {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .adress {

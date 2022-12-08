@@ -1,14 +1,30 @@
 .project {
+  display: block;
+
+@media screen and(min-width:767px){
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.project__item {
+
+}
+.project__item{
+  width: 100%;
+  margin-bottom: 30px;
+  @media screen and (min-width: 767px) {
+    width: 350px;
+    margin-bottom: 0;
+    
+  }
+
+}
+.project__link {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   transition: box-shadow var(--transition);
+
   @media screen and(min-width:768px) and(max-width:1199px) {
     display: flex;
     flex-direction: column;
@@ -44,7 +60,7 @@
   transform: translateY(101%);
   transition: transform var(--transition);
 
-  @media screen and(min-width:768px) and(max-width:1199px) {
+  @media screen and(min-width:767px) and(max-width:1199px) {
     flex-grow: 1;
   }
 }
@@ -72,6 +88,10 @@
   margin-top: 4px;
 }
 .project__icon {
-  width: 370px;
-  height: 294px;
+  @media screen and (min-width:767px) {
+    width: 100%;
+    height: auto;
+  }
+  // width: 370px;
+  // height: 294px;
 }
