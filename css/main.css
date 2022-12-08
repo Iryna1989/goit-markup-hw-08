@@ -480,6 +480,8 @@ a {
 }
 .site__item--current {
   color: var(--accent-color);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 .site__item:hover, .site__item:focus {
   color: var(--accent-color);

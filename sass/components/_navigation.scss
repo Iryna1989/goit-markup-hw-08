@@ -48,6 +48,7 @@
 
   &--current {
     color: var(--accent-color);
+    transform: scaleX(1);
   }
 
   &:hover,
