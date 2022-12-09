@@ -12,8 +12,6 @@
   }
 }
 .clients__link {
-  width: 170px;
-  height: 92px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,6 +19,17 @@
   border-radius: 4px;
   color: #afb1b8;
   transition: color var(--transition);
+
+  @media screen and (min-width: 480px) {
+    width: 210px;
+  }
+  @media screen and(min-width:767px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 92px;
+  }
 
   &:hover,
   &:focus {

@@ -5,16 +5,13 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
-  
-  @media screen and (min-width: 767px) {
-     margin-right: 87px;
 
-    
-   }
+  @media screen and (min-width: 767px) {
+    margin-right: 87px;
+  }
   @media screen and(min-width: 1200px) {
     font-size: 26px;
     margin-right: 93px;
-  
   }
 }
 .logo__first {
@@ -34,4 +31,21 @@
   font-size: 26px;
   line-height: 1.2;
   color: var(--secondary-color);
+}
+.logo__footer--first {
+  padding: 15px 16px;
+  font-family: 'Raleway';
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    padding: 15px 50px;
+  }
+  @media screen and(min-width: 1200px) {
+    font-size: 26px;
+    margin-right: 93px;
+    padding: 0;
+  }
 }
