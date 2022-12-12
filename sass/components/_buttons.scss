@@ -17,7 +17,7 @@
     justify-content: flex-start;
     margin-top: 0px;
     margin-bottom: 40px;
-    gap: 15px 15px;
+    gap: 15px 8px;
   }
   display: flex;
   justify-content: center;
@@ -35,7 +35,7 @@
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  padding: 6px 22px;
+  padding: 6px 25px;
   transition: color var(--transition), background-color var(--transition),
     box-shadow var(--transition);
 

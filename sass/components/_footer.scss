@@ -33,10 +33,12 @@
   }
 }
 .footer__container--first {
-  margin-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 
   @media screen and (min-width: 768px) {
-    // margin-right: 70px;
+    margin-right: 70px;
   }
 }
 
@@ -52,6 +54,7 @@
   }
   @media screen and(min-width: 1200px) {
     margin-left: auto;
+    margin-right: 0;
   }
 }
 .footer__adress {
